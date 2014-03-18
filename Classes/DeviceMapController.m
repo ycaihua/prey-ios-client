@@ -77,8 +77,8 @@
     return YES;
 }
 -(void)dealloc {
-    [mapa release], mapa = nil;
-    [MANG release], MANG = nil;
     [super dealloc];
+    [mapa release];
+    [MANG release];
 }
 @end

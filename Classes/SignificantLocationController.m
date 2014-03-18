@@ -128,8 +128,8 @@
 
 
 - (void)dealloc {
-	[significantLocationManager release];
     [super dealloc];
+    [significantLocationManager release];
 }
 
 @end

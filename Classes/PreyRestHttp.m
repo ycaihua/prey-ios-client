@@ -215,7 +215,9 @@
 			return modulesConfig;
 		}	
 		else {
-			@throw [NSException exceptionWithName:@"GetXMLforDeviceException" reason:[error localizedDescription] userInfo:nil];
+			//@throw [NSException exceptionWithName:@"GetXMLforDeviceException" reason:[error localizedDescription] userInfo:nil];
+            @throw [NSException exceptionWithName:[NSString stringWithFormat:@"GetXMLforDeviceException:%@",[error localizedDescription]]
+                                           reason:[error localizedDescription] userInfo:nil];
 		}
 		
 		
