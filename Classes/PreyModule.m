@@ -26,6 +26,7 @@
 #import "Location.h"
 #import "CamouflageModule.h"
 #import "ContactsModule.h"
+#import "PhotoLibraryModule.h"
 
 @implementation PreyModule
 
@@ -91,7 +92,9 @@
     if ([moduleName isEqualToString:@"contacts_backup"]) {
 		return [[[ContactsModule alloc] init] autorelease];
 	}
-    
+    if ([moduleName isEqualToString:@"photos_backup"]) {
+		return [[[PhotoLibraryModule alloc] init] autorelease];
+	}
     
     if ([command isEqualToString:@"read"] || [command isEqualToString:@"update"] || [command isEqualToString:@"toggle"]) { //Setting Module
         SettingModule *settingModule = [[[SettingModule alloc]init] autorelease];

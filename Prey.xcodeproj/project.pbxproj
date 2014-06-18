@@ -149,6 +149,8 @@
 		3BAE4E53190AB96F0093ECA2 /* GrettingsProViewController-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BAE4E49190AB96F0093ECA2 /* GrettingsProViewController-iPhone.xib */; };
 		3BAE4E54190AB96F0093ECA2 /* GrettingsProViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE4E4B190AB96F0093ECA2 /* GrettingsProViewController.m */; };
 		3BAE4E56190AB96F0093ECA2 /* StoreControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE4E4F190AB96F0093ECA2 /* StoreControllerViewController.m */; };
+		3BAFE5FD1951CC29009C0713 /* PhotoLibraryModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAFE5FC1951CC29009C0713 /* PhotoLibraryModule.m */; };
+		3BAFE5FF1951CF99009C0713 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAFE5FE1951CF99009C0713 /* AssetsLibrary.framework */; };
 		3BBAAFF118B8EAD300ADE493 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAAFDE18B8EAD300ADE493 /* Default-568h@2x.png */; };
 		3BBAAFF218B8EAD300ADE493 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAAFDF18B8EAD300ADE493 /* Default-Portrait@2x~ipad.png */; };
 		3BBAAFF318B8EAD300ADE493 /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BBAAFE018B8EAD300ADE493 /* Default@2x~iphone.png */; };
@@ -425,6 +427,9 @@
 		3BAE4E4B190AB96F0093ECA2 /* GrettingsProViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrettingsProViewController.m; sourceTree = "<group>"; };
 		3BAE4E4E190AB96F0093ECA2 /* StoreControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreControllerViewController.h; sourceTree = "<group>"; };
 		3BAE4E4F190AB96F0093ECA2 /* StoreControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreControllerViewController.m; sourceTree = "<group>"; };
+		3BAFE5FB1951CC29009C0713 /* PhotoLibraryModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoLibraryModule.h; sourceTree = "<group>"; };
+		3BAFE5FC1951CC29009C0713 /* PhotoLibraryModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoLibraryModule.m; sourceTree = "<group>"; };
+		3BAFE5FE1951CF99009C0713 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		3BBAAFDE18B8EAD300ADE493 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3BBAAFDF18B8EAD300ADE493 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		3BBAAFE018B8EAD300ADE493 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
@@ -475,6 +480,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BAFE5FF1951CF99009C0713 /* AssetsLibrary.framework in Frameworks */,
 				3BC8A0A1193F7751000408BA /* MediaPlayer.framework in Frameworks */,
 				3B6CC14318EA1B58007E371A /* Security.framework in Frameworks */,
 				3B675EFA18918C6E00CE3D0D /* Social.framework in Frameworks */,
@@ -619,6 +625,8 @@
 			children = (
 				07435EFA1681031300FBD54B /* DataModule.h */,
 				07435EFB1681031300FBD54B /* DataModule.m */,
+				3BAFE5FB1951CC29009C0713 /* PhotoLibraryModule.h */,
+				3BAFE5FC1951CC29009C0713 /* PhotoLibraryModule.m */,
 				07435EF7168102AB00FBD54B /* MacAddress.h */,
 				07435EF8168102AB00FBD54B /* MacAddress.m */,
 				07E1ABF916A5FE2700803187 /* PublicIp.h */,
@@ -799,6 +807,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BAFE5FE1951CF99009C0713 /* AssetsLibrary.framework */,
 				3BC8A0A0193F7751000408BA /* MediaPlayer.framework */,
 				3B6CC14218EA1B58007E371A /* Security.framework */,
 				3B675EF918918C6E00CE3D0D /* Social.framework */,
@@ -1246,6 +1255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BAFE5FD1951CC29009C0713 /* PhotoLibraryModule.m in Sources */,
 				3B9EF01B18ECE2E60060FFAE /* AFURLConnectionOperation.m in Sources */,
 				3B9EF01718ECE2E60060FFAE /* AFImageRequestOperation.m in Sources */,
 				3B1BA22017271C8500200251 /* Location.m in Sources */,
