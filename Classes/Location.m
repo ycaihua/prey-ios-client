@@ -131,12 +131,13 @@
             errorString = NSLocalizedString(@"An unknown error has occurred",@"Regarding getting the device's location");
             break;
     }
-    
+#ifndef TARGET_IS_EXTENSION
     if (showAlertLocation)
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Warning", nil) message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
+#endif
     PreyLogMessage(@"Prey Location", 0, @"Error getting location: %@", [error description]);
 }
 

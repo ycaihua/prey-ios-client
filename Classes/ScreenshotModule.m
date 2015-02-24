@@ -25,6 +25,7 @@
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
+#ifndef TARGET_IS_EXTENSION
     // Iterate over every window from back to front
     for (UIWindow *window in [[UIApplication sharedApplication] windows]) 
     {
@@ -49,7 +50,7 @@
             CGContextRestoreGState(context);
         }
     }
-    
+#endif
     // Retrieve the screenshot image
     //UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     

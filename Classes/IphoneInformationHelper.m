@@ -11,7 +11,7 @@
 #import "IphoneInformationHelper.h"
 #import "UIDevice-Hardware.h"
 #import <sys/utsname.h>
-#import "MKStore/MKSKProduct.h"
+//#import "MKStore/MKSKProduct.h"
 #import "Constants.h"
 
 @implementation IphoneInformationHelper
@@ -38,8 +38,8 @@
         
         if (IS_OS_6_OR_LATER)
             instance.uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-        else
-            instance.uuid = [MKSKProduct deviceId];
+        //else
+            //instance.uuid = [MKSKProduct deviceId];
 
     });
     

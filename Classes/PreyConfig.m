@@ -45,7 +45,7 @@ static NSString *const PRO_ACCOUNT=@"pro_account";
     static dispatch_once_t onceToken = 0;
     dispatch_once(&onceToken, ^{
         instance = [[PreyConfig alloc] init];
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:WidgetBundleIdentifier];//[NSUserDefaults standardUserDefaults];
         instance.controlPanelHost = [defaults stringForKey: CONTROL_PANEL_HOST];
         instance.checkPath = [defaults stringForKey: CHECK_PATH];
         instance.sendCrashReports = [defaults boolForKey: SEND_CRASH_REPORTS];
@@ -106,7 +106,7 @@ static NSString *const PRO_ACCOUNT=@"pro_account";
 
 
 - (void) loadDefaultValues {
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:WidgetBundleIdentifier];//[NSUserDefaults standardUserDefaults];
 	double accSet = [defaults doubleForKey:ACCURACY];
 	self.desiredAccuracy = accSet != 0 ? accSet : kCLLocationAccuracyHundredMeters;
 	int delaySet = (int)[defaults integerForKey:DELAY];
@@ -120,7 +120,7 @@ static NSString *const PRO_ACCOUNT=@"pro_account";
 
 - (void) saveValues
 {
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:WidgetBundleIdentifier];//[NSUserDefaults standardUserDefaults];
     [defaults setObject:[self controlPanelHost] forKey:CONTROL_PANEL_HOST];
     [defaults setObject:[self checkPath] forKey:CHECK_PATH];
     [defaults setBool:[self sendCrashReports] forKey:SEND_CRASH_REPORTS];
@@ -142,7 +142,7 @@ static NSString *const PRO_ACCOUNT=@"pro_account";
 
 -(void)resetValues
 {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:WidgetBundleIdentifier];//[NSUserDefaults standardUserDefaults];
     [defaults removeObjectForKey:CONTROL_PANEL_HOST];
     [defaults removeObjectForKey:CHECK_PATH];
     [defaults removeObjectForKey:SEND_CRASH_REPORTS];
@@ -169,7 +169,7 @@ static NSString *const PRO_ACCOUNT=@"pro_account";
 }
 
 - (NSString *) readConfigValueForKey: (NSString *) key{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:WidgetBundleIdentifier];//[NSUserDefaults standardUserDefaults];
     NSObject *value = [defaults objectForKey: key];
     if ([value isKindOfClass:[NSString class]])
         return (NSString*)value;
@@ -179,7 +179,7 @@ static NSString *const PRO_ACCOUNT=@"pro_account";
 
 - (void) setDesiredAccuracy:(double) acc {
 	desiredAccuracy = acc;
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:WidgetBundleIdentifier];//[NSUserDefaults standardUserDefaults];
 	[defaults setDouble:acc forKey:ACCURACY];
 	[defaults synchronize]; // this method is optional
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"accuracyUpdated" object:self];
@@ -187,14 +187,14 @@ static NSString *const PRO_ACCOUNT=@"pro_account";
 
 - (void) setAskForPassword:(BOOL)askForPass { 
 	askForPassword = askForPass;
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:WidgetBundleIdentifier];//[NSUserDefaults standardUserDefaults];
 	[defaults setBool:[self askForPassword] forKey:ASK_FOR_PASSWORD];
 	[defaults synchronize]; // this method is optional
 }
 
 - (void) setDelay:(int) newDelay { 
 	delay = newDelay;
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:WidgetBundleIdentifier];//[NSUserDefaults standardUserDefaults];
 	[defaults setInteger:newDelay forKey:DELAY];
 	[defaults synchronize]; // this method is optional
 }
@@ -202,14 +202,14 @@ static NSString *const PRO_ACCOUNT=@"pro_account";
 
 - (void) setCamouflageMode:(BOOL) isCamouflage { 
 	camouflageMode = isCamouflage;
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:WidgetBundleIdentifier];//[NSUserDefaults standardUserDefaults];
 	[defaults setBool:isCamouflage forKey:CAMOUFLAGE_MODE];
 	[defaults synchronize]; // this method is optional
 }
 
 - (void) setIntervalMode:(BOOL) isInterval { 
 	intervalMode = isInterval;
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:WidgetBundleIdentifier];//[NSUserDefaults standardUserDefaults];
 	[defaults setBool:isInterval forKey:INTERVAL_MODE];
 	[defaults synchronize];
 }

@@ -18,6 +18,7 @@
 
 - (void)start
 {
+#ifndef TARGET_IS_EXTENSION
     NSInteger requestNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"requestNumber"] + 1;
     [[NSUserDefaults standardUserDefaults] setInteger:requestNumber forKey:@"requestNumber"];
 
@@ -41,12 +42,13 @@
         [appDelegate.viewController setViewControllers:[NSArray arrayWithObjects:loginController, nil] animated:NO];
     }
     [super notifyCommandResponse:[self getName] withStatus:@"started"];
-    
+#endif
     PreyLogMessage(@"CamouflageModule", 10, @"CamouflageModule: command start");
 }
 
 - (void)stop
 {
+#ifndef TARGET_IS_EXTENSION
     NSInteger requestNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"requestNumber"] + 1;
     [[NSUserDefaults standardUserDefaults] setInteger:requestNumber forKey:@"requestNumber"];
 
@@ -71,7 +73,7 @@
     }
     
     [super notifyCommandResponse:[self getName] withStatus:@"stopped"];
-    
+#endif
     PreyLogMessage(@"CamouflageModule", 10, @"CamouflageModule: command stop");
 }
 

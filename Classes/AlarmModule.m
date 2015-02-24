@@ -36,13 +36,13 @@
     NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"siren" ofType:@"mp3"]];
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil];
     audioPlayer.delegate = self;
-    
+#ifndef TARGET_IS_EXTENSION
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
-    
+#endif
     [audioPlayer prepareToPlay];
     [audioPlayer setVolume:1.0f];
     [audioPlayer play];
-    
+
     [super notifyCommandResponse:[self getName] withStatus:@"started"];
 }
 

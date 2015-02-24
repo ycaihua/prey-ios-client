@@ -1,0 +1,24 @@
+//
+//  PreyWidget_Prefix.pch
+//  Prey
+//
+//  Created by Javier Cala Uribe on 10/2/15.
+//  Copyright (c) 2015 Fork Ltd. All rights reserved.
+//
+
+#ifndef Prey_PreyWidget_Prefix_pch
+#define Prey_PreyWidget_Prefix_pch
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "LoggerCommon.h"
+#import "LoggerClient.h"
+#import "PreyLogger.h"
+#import <QuartzCore/QuartzCore.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#endif
+
+#endif

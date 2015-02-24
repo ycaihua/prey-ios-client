@@ -158,12 +158,67 @@
 		3B6D2E471A0AF4DD00DF1EE7 /* AppStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6D2E431A0AF4DD00DF1EE7 /* AppStoreViewController.m */; };
 		3B6FE83916FE34F500517B97 /* AlertModuleController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B6FE83816FE34F500517B97 /* AlertModuleController-iPad.xib */; };
 		3B71AB1517FA215D0091FE14 /* CamouflageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B71AB1417FA215D0091FE14 /* CamouflageModule.m */; };
+		3B78EA8D1A83CF9500E34CA4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B78EA8C1A83CF9500E34CA4 /* NotificationCenter.framework */; };
+		3B78EA931A83CF9500E34CA4 /* PreyWidgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B78EA921A83CF9500E34CA4 /* PreyWidgetController.m */; };
+		3B78EA951A83CF9500E34CA4 /* PreyWidgetInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B78EA941A83CF9500E34CA4 /* PreyWidgetInterface.storyboard */; };
+		3B78EA981A83CF9500E34CA4 /* Prey Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3B78EA8B1A83CF9500E34CA4 /* Prey Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B78EAA21A83D60800E34CA4 /* PreyWidgetHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B78EAA11A83D60800E34CA4 /* PreyWidgetHttp.m */; };
+		3B78EAA61A83D83000E34CA4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0780561C12564F1C00E4CCE5 /* SystemConfiguration.framework */; };
+		3B78EAA71A83D85700E34CA4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0780547E12554BDA00E4CCE5 /* MobileCoreServices.framework */; };
+		3B78EAA91A83DB5C00E34CA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		3B78EAAA1A83DB5C00E34CA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		3B7C148C1909506E0080C606 /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C148B1909506E0080C606 /* PhotoController.m */; };
 		3B7FBB02191027250057EBC4 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FBAF8191027250057EBC4 /* NSData+MKBase64.m */; };
 		3B7FBB03191027250057EBC4 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FBAFA191027250057EBC4 /* SFHFKeychainUtils.m */; };
 		3B7FBB04191027250057EBC4 /* MKSKProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FBAFC191027250057EBC4 /* MKSKProduct.m */; };
 		3B7FBB05191027250057EBC4 /* MKSKSubscriptionProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FBAFE191027250057EBC4 /* MKSKSubscriptionProduct.m */; };
 		3B7FBB06191027250057EBC4 /* MKStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FBB01191027250057EBC4 /* MKStoreManager.m */; };
+		3B80D48D1A8CEC9E00B14861 /* DataModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 07435EFB1681031300FBD54B /* DataModule.m */; };
+		3B80D48E1A8CEC9E00B14861 /* PreyModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 071324411346358600F7EFD8 /* PreyModule.m */; };
+		3B80D48F1A8CEC9E00B14861 /* NewModulesConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E1ABEA16A090F200803187 /* NewModulesConfig.m */; };
+		3B80D4901A8CEC9E00B14861 /* SettingModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E1ABF716A4975B00803187 /* SettingModule.m */; };
+		3B80D4911A8CECE300B14861 /* ActionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E1ABF216A0A02C00803187 /* ActionModule.m */; };
+		3B80D4921A8CECE300B14861 /* AlarmModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 071323F1134632C900F7EFD8 /* AlarmModule.m */; };
+		3B80D4931A8CECE300B14861 /* AlertModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 071323F3134632C900F7EFD8 /* AlertModule.m */; };
+		3B80D4941A8CECE300B14861 /* CamouflageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B71AB1417FA215D0091FE14 /* CamouflageModule.m */; };
+		3B80D4951A8CECE300B14861 /* MacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 07435EF8168102AB00FBD54B /* MacAddress.m */; };
+		3B80D4961A8CECE300B14861 /* PublicIp.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E1ABFA16A5FE2700803187 /* PublicIp.m */; };
+		3B80D4971A8CECE300B14861 /* PrivateIp.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E1AC0116A600DE00803187 /* PrivateIp.m */; };
+		3B80D4981A8CECE300B14861 /* FirmwareInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E1AC0716A601AB00803187 /* FirmwareInfo.m */; };
+		3B80D4991A8CECE300B14861 /* BatteryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 075E6D2F16AEF2F000F5DB91 /* BatteryStatus.m */; };
+		3B80D49A1A8CECE300B14861 /* ProcessorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 075E6D3216AEFA6300F5DB91 /* ProcessorInfo.m */; };
+		3B80D49B1A8CECE300B14861 /* Uptime.m in Sources */ = {isa = PBXBuildFile; fileRef = 075E6D3516AEFD8E00F5DB91 /* Uptime.m */; };
+		3B80D49C1A8CECE300B14861 /* RemainingStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B0C8F17171CAD002B6E2D /* RemainingStorage.m */; };
+		3B80D49D1A8CECE300B14861 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B0C8D17171CAD002B6E2D /* Location.m */; };
+		3B80D49E1A8CECE300B14861 /* PictureModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3239A133BC32D00841BFD /* PictureModule.m */; };
+		3B80D49F1A8CECE300B14861 /* ScreenshotModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D32397133BB74A00841BFD /* ScreenshotModule.m */; };
+		3B80D4A01A8CECE300B14861 /* ContactsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 071324081346342700F7EFD8 /* ContactsModule.m */; };
+		3B80D4A11A8CECE300B14861 /* GeofencingModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D4CBB71670EDE100DD1CB9 /* GeofencingModule.m */; };
+		3B80D4A21A8CEE0100B14861 /* PreyGeofencingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D4CBBA1670FA2400DD1CB9 /* PreyGeofencingController.m */; };
+		3B86AE991A8A540B00716751 /* PreyLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 071324381346356300F7EFD8 /* PreyLogger.m */; };
+		3B86AE9A1A8A543D00716751 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0713240B1346343C00F7EFD8 /* Constants.m */; };
+		3B86AE9B1A8A544600716751 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD74798170F7EFB00F44E2C /* LoggerClient.m */; };
+		3B86AE9C1A8A547600716751 /* AFPreyStatusClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA3EAA918F19AAA00B3CA80 /* AFPreyStatusClient.m */; };
+		3B86AE9D1A8A54CF00716751 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF00318ECE2E60060FFAE /* AFHTTPClient.m */; };
+		3B86AE9E1A8A54CF00716751 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF00518ECE2E60060FFAE /* AFHTTPRequestOperation.m */; };
+		3B86AE9F1A8A54CF00716751 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF00718ECE2E60060FFAE /* AFImageRequestOperation.m */; };
+		3B86AEA01A8A54CF00716751 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF00918ECE2E60060FFAE /* AFJSONRequestOperation.m */; };
+		3B86AEA11A8A54CF00716751 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF00B18ECE2E60060FFAE /* AFNetworkActivityIndicatorManager.m */; };
+		3B86AEA21A8A54CF00716751 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF00E18ECE2E60060FFAE /* AFPropertyListRequestOperation.m */; };
+		3B86AEA31A8A54CF00716751 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF01018ECE2E60060FFAE /* AFURLConnectionOperation.m */; };
+		3B86AEA41A8A54CF00716751 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF01218ECE2E60060FFAE /* AFXMLRequestOperation.m */; };
+		3B86AEA51A8A54CF00716751 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF01418ECE2E60060FFAE /* UIImageView+AFNetworking.m */; };
+		3B86AEA61A8A64A400716751 /* PreyConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 07132444134635A100F7EFD8 /* PreyConfig.m */; };
+		3B86AEA71A8A653D00716751 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 07132448134635A100F7EFD8 /* User.m */; };
+		3B86AEA81A8A654700716751 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 0713240D1346343C00F7EFD8 /* Device.m */; };
+		3B86AEA91A8A659A00716751 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 07E1AC0316A6014D00803187 /* wwanconnect.c */; };
+		3B86AEAA1A8A659A00716751 /* UIDevice-Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E1ABFD16A5FF2E00803187 /* UIDevice-Reachability.m */; };
+		3B86AEAB1A8A659A00716751 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A12AC146D74FC00B14176 /* UIDevice-Hardware.m */; };
+		3B86AEAD1A8A6A9600716751 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07178F2512675AD3007B290C /* CoreLocation.framework */; };
+		3B86AEAE1A8A6D2800716751 /* IphoneInformationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 071324141346346F00F7EFD8 /* IphoneInformationHelper.m */; };
+		3B86AEAF1A8A6DF400716751 /* PreyRestHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0713244D134635C400F7EFD8 /* PreyRestHttp.m */; };
+		3B86AEB01A8A6EE500716751 /* JsonConfigParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 07435EF31680FDA000FBD54B /* JsonConfigParser.m */; };
+		3B86AEB11A8A6EE500716751 /* ReportModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 07132446134635A100F7EFD8 /* ReportModule.m */; };
 		3B8AC75D19F9C96700464098 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B8AC74319F9C96700464098 /* Default-568h@2x.png */; };
 		3B8AC75E19F9C96700464098 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B8AC74419F9C96700464098 /* Default-Portrait~ipad.png */; };
 		3B8AC75F19F9C96700464098 /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B8AC74519F9C96700464098 /* Default@2x~iphone.png */; };
@@ -327,6 +382,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3B78EA961A83CF9500E34CA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B78EA8A1A83CF9500E34CA4;
+			remoteInfo = "Prey Widget";
+		};
 		3B8283E01991985A000E4545 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -349,6 +411,20 @@
 			remoteInfo = Prey;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B78EA9D1A83CF9500E34CA4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3B78EA981A83CF9500E34CA4 /* Prey Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		071323F0134632C900F7EFD8 /* AlarmModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AlarmModule.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -499,6 +575,14 @@
 		3B6FE83816FE34F500517B97 /* AlertModuleController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "AlertModuleController-iPad.xib"; path = "Classes/AlertModuleController-iPad.xib"; sourceTree = "<group>"; };
 		3B71AB1317FA215D0091FE14 /* CamouflageModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamouflageModule.h; sourceTree = "<group>"; };
 		3B71AB1417FA215D0091FE14 /* CamouflageModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamouflageModule.m; sourceTree = "<group>"; };
+		3B78EA8B1A83CF9500E34CA4 /* Prey Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Prey Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B78EA8C1A83CF9500E34CA4 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3B78EA901A83CF9500E34CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B78EA911A83CF9500E34CA4 /* PreyWidgetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreyWidgetController.h; sourceTree = "<group>"; };
+		3B78EA921A83CF9500E34CA4 /* PreyWidgetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreyWidgetController.m; sourceTree = "<group>"; };
+		3B78EA941A83CF9500E34CA4 /* PreyWidgetInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PreyWidgetInterface.storyboard; sourceTree = "<group>"; };
+		3B78EAA01A83D60800E34CA4 /* PreyWidgetHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreyWidgetHttp.h; sourceTree = "<group>"; };
+		3B78EAA11A83D60800E34CA4 /* PreyWidgetHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreyWidgetHttp.m; sourceTree = "<group>"; };
 		3B7B0C8C17171CAD002B6E2D /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		3B7B0C8D17171CAD002B6E2D /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		3B7B0C8E17171CAD002B6E2D /* RemainingStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemainingStorage.h; sourceTree = "<group>"; };
@@ -516,6 +600,7 @@
 		3B7FBAFF191027250057EBC4 /* MKStoreKitConfigs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreKitConfigs.h; sourceTree = "<group>"; };
 		3B7FBB00191027250057EBC4 /* MKStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreManager.h; sourceTree = "<group>"; };
 		3B7FBB01191027250057EBC4 /* MKStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKStoreManager.m; sourceTree = "<group>"; };
+		3B86AEAC1A8A6A1400716751 /* PreyWidget_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreyWidget_Prefix.pch; sourceTree = "<group>"; };
 		3B8AC74319F9C96700464098 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3B8AC74419F9C96700464098 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		3B8AC74519F9C96700464098 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
@@ -735,6 +820,19 @@
 				07178F2612675AD3007B290C /* CoreLocation.framework in Frameworks */,
 				077D7B2D126F3C8400C713B7 /* AddressBook.framework in Frameworks */,
 				077D7BA21270D79700C713B7 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B78EA881A83CF9500E34CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B86AEAD1A8A6A9600716751 /* CoreLocation.framework in Frameworks */,
+				3B78EAA91A83DB5C00E34CA4 /* Foundation.framework in Frameworks */,
+				3B78EAAA1A83DB5C00E34CA4 /* UIKit.framework in Frameworks */,
+				3B78EAA71A83D85700E34CA4 /* MobileCoreServices.framework in Frameworks */,
+				3B78EAA61A83D83000E34CA4 /* SystemConfiguration.framework in Frameworks */,
+				3B78EA8D1A83CF9500E34CA4 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -997,6 +1095,7 @@
 			children = (
 				1D6058910D05DD3D006BFB54 /* Prey.app */,
 				3B90867E1966F6060015BB45 /* PreyTests.xctest */,
+				3B78EA8B1A83CF9500E34CA4 /* Prey Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1008,6 +1107,7 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				3B9086821966F6060015BB45 /* PreyTests */,
+				3B78EA8E1A83CF9500E34CA4 /* Prey Widget */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -1066,6 +1166,7 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				077D7A3B126E171300C713B7 /* AudioToolbox.framework */,
 				3B4F8E0B18E4EFAE00C7DB43 /* XCTest.framework */,
+				3B78EA8C1A83CF9500E34CA4 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1108,6 +1209,28 @@
 				3B656D6C1A0A47A1007C85E4 /* Localizable.strings */,
 			);
 			path = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		3B78EA8E1A83CF9500E34CA4 /* Prey Widget */ = {
+			isa = PBXGroup;
+			children = (
+				3B78EA911A83CF9500E34CA4 /* PreyWidgetController.h */,
+				3B78EA921A83CF9500E34CA4 /* PreyWidgetController.m */,
+				3B78EAA01A83D60800E34CA4 /* PreyWidgetHttp.h */,
+				3B78EAA11A83D60800E34CA4 /* PreyWidgetHttp.m */,
+				3B86AEAC1A8A6A1400716751 /* PreyWidget_Prefix.pch */,
+				3B78EA941A83CF9500E34CA4 /* PreyWidgetInterface.storyboard */,
+				3B78EA8F1A83CF9500E34CA4 /* Supporting Files */,
+			);
+			path = "Prey Widget";
+			sourceTree = "<group>";
+		};
+		3B78EA8F1A83CF9500E34CA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B78EA901A83CF9500E34CA4 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		3B7FBAF5191027250057EBC4 /* MKStore */ = {
@@ -1468,15 +1591,34 @@
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				3BC641FD1806500500C460D6 /* ShellScript */,
+				3B78EA9D1A83CF9500E34CA4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3B78EA971A83CF9500E34CA4 /* PBXTargetDependency */,
 			);
 			name = Prey;
 			productName = Prey;
 			productReference = 1D6058910D05DD3D006BFB54 /* Prey.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3B78EA8A1A83CF9500E34CA4 /* Prey Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B78EA9C1A83CF9500E34CA4 /* Build configuration list for PBXNativeTarget "Prey Widget" */;
+			buildPhases = (
+				3B78EA871A83CF9500E34CA4 /* Sources */,
+				3B78EA881A83CF9500E34CA4 /* Frameworks */,
+				3B78EA891A83CF9500E34CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Prey Widget";
+			productName = "Prey Widget";
+			productReference = 3B78EA8B1A83CF9500E34CA4 /* Prey Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		3B90867D1966F6060015BB45 /* PreyTests */ = {
 			isa = PBXNativeTarget;
@@ -1507,6 +1649,10 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Fork Ltd.";
 				TargetAttributes = {
+					3B78EA8A1A83CF9500E34CA4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = D7H96FRZB5;
+					};
 					3B90867D1966F6060015BB45 = {
 						TestTargetID = 1D6058900D05DD3D006BFB54;
 					};
@@ -1530,6 +1676,7 @@
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Prey */,
 				3B90867D1966F6060015BB45 /* PreyTests */,
+				3B78EA8A1A83CF9500E34CA4 /* Prey Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -1631,6 +1778,14 @@
 				3B8AC79A19F9D0C800464098 /* camouflage-iPad in Resources */,
 				3BA2328C1A0B9757005E5145 /* store_pro@2x.png in Resources */,
 				3B8AC76119F9C96700464098 /* Default~iphone.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B78EA891A83CF9500E34CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B78EA951A83CF9500E34CA4 /* PreyWidgetInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1737,6 +1892,60 @@
 				075E6D3016AEF2F100F5DB91 /* BatteryStatus.m in Sources */,
 				075E6D3316AEFA6300F5DB91 /* ProcessorInfo.m in Sources */,
 				075E6D3616AEFD8E00F5DB91 /* Uptime.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B78EA871A83CF9500E34CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B80D4A21A8CEE0100B14861 /* PreyGeofencingController.m in Sources */,
+				3B80D4911A8CECE300B14861 /* ActionModule.m in Sources */,
+				3B80D4921A8CECE300B14861 /* AlarmModule.m in Sources */,
+				3B80D4931A8CECE300B14861 /* AlertModule.m in Sources */,
+				3B80D4941A8CECE300B14861 /* CamouflageModule.m in Sources */,
+				3B80D4951A8CECE300B14861 /* MacAddress.m in Sources */,
+				3B80D4961A8CECE300B14861 /* PublicIp.m in Sources */,
+				3B80D4971A8CECE300B14861 /* PrivateIp.m in Sources */,
+				3B80D4981A8CECE300B14861 /* FirmwareInfo.m in Sources */,
+				3B80D4991A8CECE300B14861 /* BatteryStatus.m in Sources */,
+				3B80D49A1A8CECE300B14861 /* ProcessorInfo.m in Sources */,
+				3B80D49B1A8CECE300B14861 /* Uptime.m in Sources */,
+				3B80D49C1A8CECE300B14861 /* RemainingStorage.m in Sources */,
+				3B80D49D1A8CECE300B14861 /* Location.m in Sources */,
+				3B80D49E1A8CECE300B14861 /* PictureModule.m in Sources */,
+				3B80D49F1A8CECE300B14861 /* ScreenshotModule.m in Sources */,
+				3B80D4A01A8CECE300B14861 /* ContactsModule.m in Sources */,
+				3B80D4A11A8CECE300B14861 /* GeofencingModule.m in Sources */,
+				3B80D48D1A8CEC9E00B14861 /* DataModule.m in Sources */,
+				3B80D48E1A8CEC9E00B14861 /* PreyModule.m in Sources */,
+				3B80D48F1A8CEC9E00B14861 /* NewModulesConfig.m in Sources */,
+				3B80D4901A8CEC9E00B14861 /* SettingModule.m in Sources */,
+				3B86AEB01A8A6EE500716751 /* JsonConfigParser.m in Sources */,
+				3B86AEB11A8A6EE500716751 /* ReportModule.m in Sources */,
+				3B86AEAF1A8A6DF400716751 /* PreyRestHttp.m in Sources */,
+				3B86AEAE1A8A6D2800716751 /* IphoneInformationHelper.m in Sources */,
+				3B86AEA91A8A659A00716751 /* wwanconnect.c in Sources */,
+				3B86AEAA1A8A659A00716751 /* UIDevice-Reachability.m in Sources */,
+				3B86AEAB1A8A659A00716751 /* UIDevice-Hardware.m in Sources */,
+				3B86AEA81A8A654700716751 /* Device.m in Sources */,
+				3B86AEA71A8A653D00716751 /* User.m in Sources */,
+				3B86AEA61A8A64A400716751 /* PreyConfig.m in Sources */,
+				3B86AE9D1A8A54CF00716751 /* AFHTTPClient.m in Sources */,
+				3B86AE9E1A8A54CF00716751 /* AFHTTPRequestOperation.m in Sources */,
+				3B86AE9F1A8A54CF00716751 /* AFImageRequestOperation.m in Sources */,
+				3B86AEA01A8A54CF00716751 /* AFJSONRequestOperation.m in Sources */,
+				3B86AEA11A8A54CF00716751 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				3B86AEA21A8A54CF00716751 /* AFPropertyListRequestOperation.m in Sources */,
+				3B86AEA31A8A54CF00716751 /* AFURLConnectionOperation.m in Sources */,
+				3B86AEA41A8A54CF00716751 /* AFXMLRequestOperation.m in Sources */,
+				3B86AEA51A8A54CF00716751 /* UIImageView+AFNetworking.m in Sources */,
+				3B86AE9C1A8A547600716751 /* AFPreyStatusClient.m in Sources */,
+				3B86AE9B1A8A544600716751 /* LoggerClient.m in Sources */,
+				3B86AE9A1A8A543D00716751 /* Constants.m in Sources */,
+				3B86AE991A8A540B00716751 /* PreyLogger.m in Sources */,
+				3B78EA931A83CF9500E34CA4 /* PreyWidgetController.m in Sources */,
+				3B78EAA21A83D60800E34CA4 /* PreyWidgetHttp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1855,6 +2064,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3B78EA971A83CF9500E34CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B78EA8A1A83CF9500E34CA4 /* Prey Widget */;
+			targetProxy = 3B78EA961A83CF9500E34CA4 /* PBXContainerItemProxy */;
+		};
 		3B8283E11991985A000E4545 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1D6058900D05DD3D006BFB54 /* Prey */;
@@ -1921,7 +2135,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fork Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1941,7 +2155,8 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Prey;
-				PROVISIONING_PROFILE = "292a93bc-e4a6-43ba-be31-d6861a211598";
+				PROVISIONING_PROFILE = "42ff1e5f-fbf7-464f-8458-3a3bab4308fd";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "42ff1e5f-fbf7-464f-8458-3a3bab4308fd";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1953,6 +2168,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1975,7 +2191,8 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Prey;
-				PROVISIONING_PROFILE = "acd0e13c-a62f-448c-a7dc-902759c3db46";
+				PROVISIONING_PROFILE = "0215d1e6-c1e9-481e-a436-3437d5145993";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0215d1e6-c1e9-481e-a436-3437d5145993";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1988,7 +2205,7 @@
 				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fork Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2008,11 +2225,135 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Prey;
-				PROVISIONING_PROFILE = "277f879a-6d38-4312-b97a-441bbeb7f825";
+				PROVISIONING_PROFILE = "4ecde07b-b157-4509-8899-ce725eced45a";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4ecde07b-b157-4509-8899-ce725eced45a";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		3B78EA991A83CF9500E34CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "Prey Widget/PreyWidget_Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_IS_EXTENSION,
+					"DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Prey Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3B78EA9A1A83CF9500E34CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fork Ltd.";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "Prey Widget/PreyWidget_Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = TARGET_IS_EXTENSION;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Prey Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B78EA9B1A83CF9500E34CA4 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fork Ltd.";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "Prey Widget/PreyWidget_Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = TARGET_IS_EXTENSION;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Prey Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
 		};
 		3B90868E1966F6070015BB45 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2214,6 +2555,16 @@
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
 				07DA04A713213F2200FECCAD /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B78EA9C1A83CF9500E34CA4 /* Build configuration list for PBXNativeTarget "Prey Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B78EA991A83CF9500E34CA4 /* Debug */,
+				3B78EA9A1A83CF9500E34CA4 /* Release */,
+				3B78EA9B1A83CF9500E34CA4 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

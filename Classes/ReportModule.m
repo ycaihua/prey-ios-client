@@ -8,6 +8,7 @@
 //  Full license at "/LICENSE"
 //
 
+
 #import "ReportModule.h"
 #import "Constants.h"
 #import "PreyAppDelegate.h"
@@ -15,7 +16,7 @@
 #import "PhotoController.h"
 
 @implementation ReportModule
-
+#ifndef TARGET_IS_EXTENSION
 @synthesize waitForLocation,waitForPicture,url, picture, pictureBack, reportData, runReportTimer;
 
 + (ReportModule *)instance {
@@ -79,9 +80,10 @@
         
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"SendReport"];
         
+#ifndef TARGET_IS_EXTENSION
         if (IS_OS_7_OR_LATER)
             [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:interval];
-        
+#endif
     }
     
     [self send];
@@ -266,5 +268,5 @@
     waitForLocation = NO;
 	[self sendIfConditionsMatch];
 }
-
+#endif
 @end

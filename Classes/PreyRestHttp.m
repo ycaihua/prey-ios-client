@@ -111,11 +111,12 @@
                  {
                      showMessage = NSLocalizedString(@"There was a problem getting your account information. Please make sure the email address you entered is valid, as well as your password.",nil);
                  }
+                 #ifndef TARGET_IS_EXTENSION
                  UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Couldn't check your password",nil)
                                                                      message:showMessage
                                                                     delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                  [alertView show];
-                 
+                 #endif
                  if (block)
                  {
                      block(nil, error);
@@ -172,12 +173,12 @@
              else
              {
                  NSString  *showMessage = ([error localizedRecoverySuggestion] != nil) ? [error localizedRecoverySuggestion] : [error localizedDescription];
-                 
+                 #ifndef TARGET_IS_EXTENSION
                  UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"User couldn't be created",nil)
                                                                      message:showMessage
                                                                     delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                  [alertView show];
-                 
+                 #endif
                  if (block)
                      block(nil, error);
              }
@@ -246,12 +247,12 @@
                  {
                      showMessage = NSLocalizedString(@"It seems you've reached your limit for devices on the Control Panel. Try removing this device from your account if you had already added.",nil);
                  }
-                 
+                 #ifndef TARGET_IS_EXTENSION
                  UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Couldn't add your device",nil)
                                                                      message:showMessage
                                                                     delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                  [alertView show];
-                 
+                 #endif
                  if (block)
                      block(nil, error);
              }
@@ -295,11 +296,12 @@
              }
              else
              {
+                 #ifndef TARGET_IS_EXTENSION
                  UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Access Denied",nil)
                                                                      message:NSLocalizedString(@"Device not ready!",nil)
                                                                     delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                  [alertView show];
-                 
+                 #endif
                  if (block) {
                      block(operation.response, error);
                  }
@@ -361,7 +363,10 @@
     
     if ([modulesConfig checkAllModulesEmpty])
     {
-        PreyAppDelegate *appDelegate = (PreyAppDelegate*)[[UIApplication sharedApplication] delegate];
+        PreyAppDelegate *appDelegate;
+        #ifndef TARGET_IS_EXTENSION
+        appDelegate = (PreyAppDelegate*)[[UIApplication sharedApplication] delegate];
+        #endif
         [appDelegate checkedCompletionHandler];
     }
     else
@@ -407,7 +412,10 @@
              
              if ([modulesConfig checkAllModulesEmpty])
              {
-                 PreyAppDelegate *appDelegate = (PreyAppDelegate*)[[UIApplication sharedApplication] delegate];
+                 PreyAppDelegate *appDelegate;
+                 #ifndef TARGET_IS_EXTENSION
+                 appDelegate = (PreyAppDelegate*)[[UIApplication sharedApplication] delegate];
+                 #endif
                  [appDelegate checkedCompletionHandler];
              }
              else
@@ -436,7 +444,10 @@
 
 + (void)sendJsonData:(NSInteger)reload withData:(NSDictionary*)jsonData toEndpoint:(NSString *)url withBlock:(void (^)(NSHTTPURLResponse *response, NSError *error))block
 {
-    PreyAppDelegate *appDelegate = (PreyAppDelegate*)[[UIApplication sharedApplication] delegate];
+    PreyAppDelegate *appDelegate;
+    #ifndef TARGET_IS_EXTENSION
+    appDelegate = (PreyAppDelegate*)[[UIApplication sharedApplication] delegate];
+    #endif
     
     if (reload <= 0)
     {
@@ -487,7 +498,10 @@
 
 + (void)sendJsonData:(NSInteger)reload withData:(NSDictionary*)jsonData andRawData:(NSDictionary*)rawData toEndpoint:(NSString *)url withBlock:(void (^)(NSHTTPURLResponse *response, NSError *error))block
 {
-    PreyAppDelegate *appDelegate = (PreyAppDelegate*)[[UIApplication sharedApplication] delegate];
+    PreyAppDelegate *appDelegate;
+    #ifndef TARGET_IS_EXTENSION
+    appDelegate = (PreyAppDelegate*)[[UIApplication sharedApplication] delegate];
+    #endif
     
     if (reload <= 0)
     {

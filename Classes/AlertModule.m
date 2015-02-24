@@ -17,7 +17,7 @@
 - (void)start
 {
     NSString *alertMessage = [super.options objectForKey:@"alert_message"];
-
+#ifndef TARGET_IS_EXTENSION
     if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground)
     {
         UILocalNotification *localNotif = [[UILocalNotification alloc] init];
@@ -43,12 +43,13 @@
         
         [super notifyCommandResponse:[self getName] withStatus:@"stopped"];
     }
-    
+#endif
     PreyLogMessage(@"AlertModule", 10, @"AlertModule: command start");
 }
 
 - (void)showAlertModule:(NSString*)message
 {
+#ifndef TARGET_IS_EXTENSION
     PreyAppDelegate *appDelegate = (PreyAppDelegate*)[[UIApplication sharedApplication] delegate];
     
     AlertModuleController *alertController;
@@ -62,6 +63,7 @@
     PreyLogMessage(@"App Delegate", 20, @"Displaying the alert message");
     
     [appDelegate.viewController setViewControllers:[NSArray arrayWithObjects:alertController, nil] animated:NO];
+#endif
 }
 
 - (NSString *) getName {
