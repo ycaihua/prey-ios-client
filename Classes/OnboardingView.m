@@ -38,10 +38,32 @@
         posYiPhone    = (IS_IPHONE5) ? 0 : -45;
         posYiPhoneBtn = (IS_IPHONE5) ? 0 : -80;
     }
+#warning WIP
     
-    UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:bgImage]];
-    bg.frame = CGRectMake(0, 0, widthScreen, heightScreen);
-    [self.view addSubview:bg];
+    [self.view setBackgroundColor:[UIColor blackColor]];
+    
+    bgImage = @"bg-view0.jpg";
+    UIImageView *bg0 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:bgImage]];
+    bg0.frame = CGRectMake(0, 0, widthScreen, heightScreen);
+    bg0.tag   = kTagImageBg0;
+    [self.view addSubview:bg0];
+
+    bgImage = @"bg-view1.jpg";
+    UIImageView *bg1 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:bgImage]];
+    bg1.frame = CGRectMake(0, 0, widthScreen, heightScreen);
+    bg1.tag   = kTagImageBg1;
+    bg1.alpha = 0;
+    [self.view addSubview:bg1];
+
+    bgImage = @"bg-view2.jpg";
+    UIImageView *bg2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:bgImage]];
+    bg2.frame = CGRectMake(0, 0, widthScreen, heightScreen);
+    bg2.tag   = kTagImageBg2;
+    bg2.alpha = 0;
+    [self.view addSubview:bg2];
+
+    
+    
     
     [self initScrollViewAndPageControl];
     [self initButtons];
@@ -218,8 +240,8 @@
 
     if ( (tmpPageControl.currentPage == 0) || (tmpPageControl.currentPage == 1) )
         [self animatePage0:scrollView.contentOffset.x];
-    
-    if (tmpPageControl.currentPage == 1)
+  
+    if ( (tmpPageControl.currentPage == 1) || (tmpPageControl.currentPage == 2) )
         [self animatePage1:scrollView.contentOffset.x];
 
     if (tmpPageControl.currentPage == 2)
@@ -277,6 +299,14 @@
     backButton.alpha  = nextButton.alpha = pageControl.alpha = (scrollMoveX/320.0f);
         
     [self.view endEditing:YES];
+    
+    
+#warning WIP
+    UIImageView *bgView0 = (UIImageView*)[self.view viewWithTag:kTagImageBg0];
+    UIImageView *bgView1 = (UIImageView*)[self.view viewWithTag:kTagImageBg1];
+
+    bgView0.alpha = 1 - (scrollMoveX/320.0f);
+    bgView1.alpha = (scrollMoveX/320.0f);
 }
 
 - (void)animatePage1:(CGFloat)scrollMoveX1
@@ -286,6 +316,17 @@
         [self.view endEditing:YES];
         OnboardingSubView *currentView  = (OnboardingSubView*)[self.view viewWithTag:301];
         [currentView checkCameraAuth];
+    }
+    
+#warning WIP
+    if (scrollMoveX1 > widthScreen*1)
+    {
+        UIImageView *bgView1 = (UIImageView*)[self.view viewWithTag:kTagImageBg1];
+        UIImageView *bgView2 = (UIImageView*)[self.view viewWithTag:kTagImageBg2];
+        
+        CGFloat tmpMx = scrollMoveX1 - 320;
+        bgView1.alpha = 1 - (tmpMx/320.0f);
+        bgView2.alpha = (tmpMx/320.0f);
     }
 }
 

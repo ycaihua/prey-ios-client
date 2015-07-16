@@ -14,6 +14,10 @@
 }
 
 // Onboarding View
+#define subTextColor [UIColor colorWithWhite:0.79 alpha:1.000]
+
+
+
 #define kTagNameNewUser 28
 #define kTagNameOldUser 29
 
@@ -40,6 +44,9 @@
 #define kTagLocationSwitch 3302
 #define kTagNotifySwitch   3303
 
+#define kTagImageBg0       6100
+#define kTagImageBg1       6101
+#define kTagImageBg2       6102
 
 #define kGAIcode @"UA-8743344-7"
 

@@ -306,6 +306,12 @@
 		3BA232971A0C2F85005E5145 /* store_pro-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BA232951A0C2F85005E5145 /* store_pro-iPad.png */; };
 		3BA232981A0C2F85005E5145 /* store_pro-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BA232961A0C2F85005E5145 /* store_pro-iPad@2x.png */; };
 		3BA3EAAA18F19AAA00B3CA80 /* AFPreyStatusClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA3EAA918F19AAA00B3CA80 /* AFPreyStatusClient.m */; };
+		3BA46A5D1B4ED1DA00F1C3FE /* bg-view0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3BA46A5C1B4ED1DA00F1C3FE /* bg-view0.jpg */; };
+		3BA46A5E1B4ED1DA00F1C3FE /* bg-view0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3BA46A5C1B4ED1DA00F1C3FE /* bg-view0.jpg */; };
+		3BA46A601B4ED5B800F1C3FE /* bg-view1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3BA46A5F1B4ED5B800F1C3FE /* bg-view1.jpg */; };
+		3BA46A611B4ED5B800F1C3FE /* bg-view1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3BA46A5F1B4ED5B800F1C3FE /* bg-view1.jpg */; };
+		3BA46A631B4ED90700F1C3FE /* bg-view2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3BA46A621B4ED90700F1C3FE /* bg-view2.jpg */; };
+		3BA46A641B4ED90700F1C3FE /* bg-view2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3BA46A621B4ED90700F1C3FE /* bg-view2.jpg */; };
 		3BA6A22F16769566005323EB /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA6A22E16769566005323EB /* MainWindow-iPad.xib */; };
 		3BA6A26C1676A56E005323EB /* CongratulationsController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA6A26B1676A56E005323EB /* CongratulationsController-iPad.xib */; };
 		3BA6AD1918D1199E00CAADAC /* LoginController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA6AD1818D1199E00CAADAC /* LoginController-iPad.xib */; };
@@ -653,6 +659,9 @@
 		3BA232961A0C2F85005E5145 /* store_pro-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store_pro-iPad@2x.png"; sourceTree = "<group>"; };
 		3BA3EAA818F19AAA00B3CA80 /* AFPreyStatusClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPreyStatusClient.h; path = Classes/AFPreyStatusClient.h; sourceTree = "<group>"; };
 		3BA3EAA918F19AAA00B3CA80 /* AFPreyStatusClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPreyStatusClient.m; path = Classes/AFPreyStatusClient.m; sourceTree = "<group>"; };
+		3BA46A5C1B4ED1DA00F1C3FE /* bg-view0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-view0.jpg"; sourceTree = "<group>"; };
+		3BA46A5F1B4ED5B800F1C3FE /* bg-view1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-view1.jpg"; sourceTree = "<group>"; };
+		3BA46A621B4ED90700F1C3FE /* bg-view2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-view2.jpg"; sourceTree = "<group>"; };
 		3BA6A22E16769566005323EB /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		3BA6A26B1676A56E005323EB /* CongratulationsController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "CongratulationsController-iPad.xib"; path = "Classes/CongratulationsController-iPad.xib"; sourceTree = "<group>"; };
 		3BA6AD1818D1199E00CAADAC /* LoginController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LoginController-iPad.xib"; path = "Classes/LoginController-iPad.xib"; sourceTree = "<group>"; };
@@ -1054,6 +1063,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3BA46A5B1B4ED1DA00F1C3FE /* Bg */,
 				3BD6C5A7197446D600A77C6D /* Fonts */,
 				3BF0370616783C760086A7A7 /* Iconos */,
 				3B8AC78519F9D0C800464098 /* Images */,
@@ -1264,6 +1274,17 @@
 				3B9EF01418ECE2E60060FFAE /* UIImageView+AFNetworking.m */,
 			);
 			name = "AFNetworking-1.x";
+			sourceTree = "<group>";
+		};
+		3BA46A5B1B4ED1DA00F1C3FE /* Bg */ = {
+			isa = PBXGroup;
+			children = (
+				3BA46A5C1B4ED1DA00F1C3FE /* bg-view0.jpg */,
+				3BA46A5F1B4ED5B800F1C3FE /* bg-view1.jpg */,
+				3BA46A621B4ED90700F1C3FE /* bg-view2.jpg */,
+			);
+			name = Bg;
+			path = Resources/Bg;
 			sourceTree = "<group>";
 		};
 		3BA73C641AA519C9002080CB /* Onboarding Controller */ = {
@@ -1624,6 +1645,7 @@
 				3B4585231AB785F400B07BC1 /* preyIconBird.png in Resources */,
 				3B6D2E441A0AF4DD00DF1EE7 /* AppStoreViewController-iPad.xib in Resources */,
 				3B4B24DA1A115C76002B64E8 /* close_on.png in Resources */,
+				3BA46A5D1B4ED1DA00F1C3FE /* bg-view0.jpg in Resources */,
 				3B4B24D91A115C76002B64E8 /* close_off@3x.png in Resources */,
 				3BA232921A0BB37A005E5145 /* GrettingsProViewController-iPhone-568h.xib in Resources */,
 				3B8AC76D19F9C96700464098 /* Icon-Small-50.png in Resources */,
@@ -1647,11 +1669,13 @@
 				3BAB3CFB1A0993ED003BFCCE /* bt-welcome-press.png in Resources */,
 				3B6FE83916FE34F500517B97 /* AlertModuleController-iPad.xib in Resources */,
 				3B8AC77619F9C96700464098 /* iTunesArtwork@2x.png in Resources */,
+				3BA46A601B4ED5B800F1C3FE /* bg-view1.jpg in Resources */,
 				3B62F4451AE1C1770060C8D7 /* theft.png in Resources */,
 				3B4B24D71A115C76002B64E8 /* close_off.png in Resources */,
 				3B8AC75D19F9C96700464098 /* Default-568h@2x.png in Resources */,
 				3B4B24D81A115C76002B64E8 /* close_off@2x.png in Resources */,
 				3BA2328A1A0B9757005E5145 /* store_discount@2x.png in Resources */,
+				3BA46A631B4ED90700F1C3FE /* bg-view2.jpg in Resources */,
 				3B8AC79619F9D0C800464098 /* bg-welcome-iPhone.png in Resources */,
 				3B6D2E461A0AF4DD00DF1EE7 /* AppStoreViewController-iPhone.xib in Resources */,
 				3B8AC7A119F9D0C800464098 /* prey-text.png in Resources */,
@@ -1691,7 +1715,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA46A611B4ED5B800F1C3FE /* bg-view1.jpg in Resources */,
 				3B9086871966F6070015BB45 /* InfoPlist.strings in Resources */,
+				3BA46A5E1B4ED1DA00F1C3FE /* bg-view0.jpg in Resources */,
+				3BA46A641B4ED90700F1C3FE /* bg-view2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

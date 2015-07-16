@@ -38,7 +38,8 @@
     welcomeText.textAlignment = UITextAlignmentCenter;
     welcomeText.numberOfLines = 5;
     welcomeText.backgroundColor = [UIColor clearColor];
-    welcomeText.textColor = [UIColor colorWithRed:(148/255.f) green:(169/255.f) blue:(183/255.f) alpha:1];
+    welcomeText.textColor = subTextColor;
+    //welcomeText.textColor = [UIColor colorWithRed:(148/255.f) green:(169/255.f) blue:(183/255.f) alpha:1];
     welcomeText.adjustsFontSizeToFitWidth = YES;
     welcomeText.text = NSLocalizedString(@"Prey will track your laptop, phone and tablet if they ever go missing, whether you're in town or abroad.",nil);
     [self addSubview:welcomeText];
@@ -143,7 +144,8 @@
     cameraText.font = [UIFont fontWithName:@"Open Sans" size:fontZize];
     cameraText.textAlignment = UITextAlignmentLeft;
     cameraText.backgroundColor = [UIColor clearColor];
-    cameraText.textColor = [UIColor colorWithRed:(148/255.f) green:(169/255.f) blue:(183/255.f) alpha:1];
+    cameraText.textColor = subTextColor;
+    //cameraText.textColor = [UIColor colorWithRed:(148/255.f) green:(169/255.f) blue:(183/255.f) alpha:1];
     cameraText.text = NSLocalizedString(@"Enable Camera",nil);
     [self addSubview:cameraText];
     
@@ -152,7 +154,8 @@
     locationText.font = [UIFont fontWithName:@"Open Sans" size:fontZize];
     locationText.textAlignment = UITextAlignmentLeft;
     locationText.backgroundColor = [UIColor clearColor];
-    locationText.textColor = [UIColor colorWithRed:(148/255.f) green:(169/255.f) blue:(183/255.f) alpha:1];
+    locationText.textColor = subTextColor;
+    //locationText.textColor = [UIColor colorWithRed:(148/255.f) green:(169/255.f) blue:(183/255.f) alpha:1];
     locationText.text = NSLocalizedString(@"Enable Location",nil);
     [self addSubview:locationText];
     
@@ -162,7 +165,8 @@
     notifyText.textAlignment = UITextAlignmentLeft;
     notifyText.adjustsFontSizeToFitWidth = YES;
     notifyText.backgroundColor = [UIColor clearColor];
-    notifyText.textColor = [UIColor colorWithRed:(148/255.f) green:(169/255.f) blue:(183/255.f) alpha:1];
+    notifyText.textColor = subTextColor;
+    //notifyText.textColor = [UIColor colorWithRed:(148/255.f) green:(169/255.f) blue:(183/255.f) alpha:1];
     notifyText.text = NSLocalizedString(@"Enable Notification",nil);
     [self addSubview:notifyText];
     
@@ -308,7 +312,8 @@
     infoText.textAlignment = UITextAlignmentCenter;
     infoText.numberOfLines = 5;
     infoText.backgroundColor = [UIColor clearColor];
-    infoText.textColor = [UIColor colorWithRed:(148/255.f) green:(169/255.f) blue:(183/255.f) alpha:1];
+    infoText.textColor = subTextColor;
+    //infoText.textColor = [UIColor colorWithRed:(148/255.f) green:(169/255.f) blue:(183/255.f) alpha:1];
     infoText.text = NSLocalizedString(@"Sensitive data is gathered only when you request it, and is for your eyes only. Nothing is sent without your permission.",nil);
     [self addSubview:infoText];
     
