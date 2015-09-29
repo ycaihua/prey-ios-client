@@ -22,6 +22,9 @@
 #import "PreyStoreManager.h"
 #import "OnboardingView.h"
 
+#warning WIP
+#import "OnboardingWebView.h"
+
 @implementation PreyAppDelegate
 
 @synthesize window,viewController;
@@ -302,7 +305,18 @@
     else
     {
         [PreyDeployment runPreyDeployment];
-        
+#warning WIP
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+        {
+            if (IS_IPHONE5)
+                nextController = [[OnboardingWebView alloc] initWithNibName:@"OnboardingWebView-iPhone-568h" bundle:nil];
+            else
+                nextController = [[OnboardingWebView alloc] initWithNibName:@"OnboardingWebView-iPhone" bundle:nil];
+        }
+        else
+            nextController = [[OnboardingWebView alloc] initWithNibName:@"OnboardingWebView-iPad" bundle:nil];
+
+        /*
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
         {
             if (IS_IPHONE5)
@@ -312,6 +326,7 @@
         }
         else
             nextController = [[OnboardingView alloc] initWithNibName:@"OnboardingView-iPad" bundle:nil];
+        */
     }
     
 	viewController = [[UINavigationController alloc] initWithRootViewController:nextController];

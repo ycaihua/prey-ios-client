@@ -76,6 +76,11 @@
 		3B1C2BB4191ACAAF00DFD677 /* AppFeedback.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B1C2BB3191ACAAF00DFD677 /* AppFeedback.plist */; };
 		3B1C978117B3177400D9FD1E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1C978017B3177400D9FD1E /* CoreData.framework */; };
 		3B2A3BD017CE68B3000D5B9D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A3BCF17CE68B3000D5B9D /* Settings.bundle */; };
+		3B339D221BBACA9000B7A0E8 /* OnboardingWebView-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B339D1D1BBACA9000B7A0E8 /* OnboardingWebView-iPad.xib */; };
+		3B339D231BBACA9000B7A0E8 /* OnboardingWebView-iPhone-568h.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B339D1E1BBACA9000B7A0E8 /* OnboardingWebView-iPhone-568h.xib */; };
+		3B339D241BBACA9000B7A0E8 /* OnboardingWebView-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B339D1F1BBACA9000B7A0E8 /* OnboardingWebView-iPhone.xib */; };
+		3B339D251BBACA9000B7A0E8 /* OnboardingWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B339D211BBACA9000B7A0E8 /* OnboardingWebView.m */; };
+		3B339DC71BBAD46700B7A0E8 /* OnboardingWebView in Resources */ = {isa = PBXBuildFile; fileRef = 3B339DC61BBAD46700B7A0E8 /* OnboardingWebView */; };
 		3B39B5601AB0D74B00B313AD /* OnboardingView-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B39B55F1AB0D74B00B313AD /* OnboardingView-iPad.xib */; };
 		3B3CCB5D196B28820000F56C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B65EE291805E358008EB7CF /* MBProgressHUD.m */; };
 		3B3CCB63196B28820000F56C /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF00318ECE2E60060FFAE /* AFHTTPClient.m */; };
@@ -509,6 +514,12 @@
 		3B31F1CE19D0CCA500769982 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
 		3B31F1CF19D0CCA500769982 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
 		3B31F1D019D0CCA500769982 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		3B339D1D1BBACA9000B7A0E8 /* OnboardingWebView-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "OnboardingWebView-iPad.xib"; sourceTree = "<group>"; };
+		3B339D1E1BBACA9000B7A0E8 /* OnboardingWebView-iPhone-568h.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "OnboardingWebView-iPhone-568h.xib"; sourceTree = "<group>"; };
+		3B339D1F1BBACA9000B7A0E8 /* OnboardingWebView-iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "OnboardingWebView-iPhone.xib"; sourceTree = "<group>"; };
+		3B339D201BBACA9000B7A0E8 /* OnboardingWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingWebView.h; sourceTree = "<group>"; };
+		3B339D211BBACA9000B7A0E8 /* OnboardingWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingWebView.m; sourceTree = "<group>"; };
+		3B339DC61BBAD46700B7A0E8 /* OnboardingWebView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = OnboardingWebView; path = Resources/OnboardingWebView; sourceTree = "<group>"; };
 		3B39B55F1AB0D74B00B313AD /* OnboardingView-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "OnboardingView-iPad.xib"; path = "Classes/OnboardingView-iPad.xib"; sourceTree = "<group>"; };
 		3B4585011AB785F400B07BC1 /* arrowBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowBack.png; sourceTree = "<group>"; };
 		3B4585021AB785F400B07BC1 /* arrowBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrowBack@2x.png"; sourceTree = "<group>"; };
@@ -1053,6 +1064,7 @@
 				0780541E1255421800E4CCE5 /* Prey Http */,
 				3B99866F1B4C10D7009D0A00 /* PreyStore */,
 				07435EF51681021C00FBD54B /* Prey Modules */,
+				3B339D1C1BBACA9000B7A0E8 /* Onboarding-WebView */,
 				1D3623240D0F684500981E51 /* PreyAppDelegate.h */,
 				1D3623250D0F684500981E51 /* PreyAppDelegate.m */,
 				3B477ED718B2AA7B003A32CE /* PreyDeployment.h */,
@@ -1097,6 +1109,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3B339DC61BBAD46700B7A0E8 /* OnboardingWebView */,
 				3BD6C5A7197446D600A77C6D /* Fonts */,
 				3BF0370616783C760086A7A7 /* Iconos */,
 				3B8AC78519F9D0C800464098 /* Images */,
@@ -1152,6 +1165,18 @@
 				3B65EE291805E358008EB7CF /* MBProgressHUD.m */,
 			);
 			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		3B339D1C1BBACA9000B7A0E8 /* Onboarding-WebView */ = {
+			isa = PBXGroup;
+			children = (
+				3B339D1D1BBACA9000B7A0E8 /* OnboardingWebView-iPad.xib */,
+				3B339D1E1BBACA9000B7A0E8 /* OnboardingWebView-iPhone-568h.xib */,
+				3B339D1F1BBACA9000B7A0E8 /* OnboardingWebView-iPhone.xib */,
+				3B339D201BBACA9000B7A0E8 /* OnboardingWebView.h */,
+				3B339D211BBACA9000B7A0E8 /* OnboardingWebView.m */,
+			);
+			path = "Onboarding-WebView";
 			sourceTree = "<group>";
 		};
 		3B3B2FC91714B63C00BABCAE /* Location Controller */ = {
@@ -1738,9 +1763,11 @@
 				3B6D2E461A0AF4DD00DF1EE7 /* AppStoreViewController-iPhone.xib in Resources */,
 				3B8AC7A119F9D0C800464098 /* prey-text.png in Resources */,
 				3B8AC76919F9C96700464098 /* Icon-120.png in Resources */,
+				3B339D231BBACA9000B7A0E8 /* OnboardingWebView-iPhone-568h.xib in Resources */,
 				3B8AC79D19F9D0C800464098 /* ok-congratulations.png in Resources */,
 				3B8AC79719F9D0C800464098 /* bg-welcome-iPhone5.png in Resources */,
 				3B39B5601AB0D74B00B313AD /* OnboardingView-iPad.xib in Resources */,
+				3B339D221BBACA9000B7A0E8 /* OnboardingWebView-iPad.xib in Resources */,
 				3B9D47C4189C5D2A00E6F7A2 /* LoginController-iPhone.xib in Resources */,
 				3BBAB00918B9085C00ADE493 /* LoginController-iPhone-568h.xib in Resources */,
 				3B150F2B18D11B96003BD13E /* WelcomeController-iPad.xib in Resources */,
@@ -1759,12 +1786,14 @@
 				3BAB3CFD1A099FBC003BFCCE /* OpenSans-Bold.ttf in Resources */,
 				3B8AC79519F9D0C800464098 /* bg-welcome-iPad.png in Resources */,
 				3B8AC76B19F9C96700464098 /* Icon-Small-40@2x.png in Resources */,
+				3B339DC71BBAD46700B7A0E8 /* OnboardingWebView in Resources */,
 				3B4585241AB785F400B07BC1 /* preyIconBird@2x.png in Resources */,
 				3BA6AD1918D1199E00CAADAC /* LoginController-iPad.xib in Resources */,
 				3B4585251AB785F400B07BC1 /* preyIconBorder.png in Resources */,
 				3B8AC78019F9D01C00464098 /* Roboto-Regular.ttf in Resources */,
 				3B8AC79A19F9D0C800464098 /* camouflage-iPad in Resources */,
 				3BA2328C1A0B9757005E5145 /* store_pro@2x.png in Resources */,
+				3B339D241BBACA9000B7A0E8 /* OnboardingWebView-iPhone.xib in Resources */,
 				3B8AC76119F9C96700464098 /* Default~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1866,6 +1895,7 @@
 				3BC057D21BB201F1006C1DB7 /* AFHTTPSessionManager.m in Sources */,
 				3BE24A7C1ABB915100464C1D /* RSSCloudService.m in Sources */,
 				3B8E69221AD43124002F489B /* PostViewController.m in Sources */,
+				3B339D251BBACA9000B7A0E8 /* OnboardingWebView.m in Sources */,
 				07D4CBB81670EDE100DD1CB9 /* GeofencingModule.m in Sources */,
 				3BE24A781ABB915100464C1D /* XPathQuery.m in Sources */,
 				3BE034B21AEFDC08003E88B1 /* Wifi-Info.m in Sources */,
